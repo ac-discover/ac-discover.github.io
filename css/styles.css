@@ -1275,7 +1275,7 @@ a:hover {
 	}
 
 	.split .text-container {
-		width: 450px;
+		width: 600px;
 	}
 	/* end of details */
 
@@ -1417,6 +1417,11 @@ canvas{
   padding: 0 .5rem;
 }
 
+  .img-reponsive {
+	width: 100%;
+}
+
+
 @media all and (max-width: 768px) {
   
   .countdown {
@@ -1424,12 +1429,12 @@ canvas{
     padding: .75rem;
   }
 
-.subtexto-novidades {
-	margin-bottom: 10px;
+  .slider-1 .testimonial-image {
+    width: -webkit-fill-available;
 }
 
-  .img-reponsive {
-	width: 100%;
+.subtexto-novidades {
+	margin-bottom: 10px;
 }
 
 .counter {
