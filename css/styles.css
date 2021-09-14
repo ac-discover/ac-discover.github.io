@@ -172,17 +172,18 @@ a:hover {
 
 .btn-solid-lg {
     display: inline-block;
-    padding: 1.625rem 2.625rem 1.625rem 2.625rem;
+    padding: 1rem 2rem 1rem 2rem;
     border: #F76706;
     border-radius: 4px;
     background-color: #F76706;
     color: #ffffff;
     font-weight: 600;
     font-size: 0.875rem;
-    line-height: 0;
+    line-height: normal;
     text-decoration: none;
     box-shadow: 0px 6px 27px -10px rgb(247 103 6);
     transition: all 0.2s;
+    border: #F76706 solid 1px;
 }
 
 .btn-solid-lg:hover {
@@ -898,8 +899,8 @@ a:hover {
 #myBtn {
 	position: fixed; 
   	z-index: 99; 
-	bottom: 20px; 
-	right: 20px; 
+	bottom: 40px; 
+	right: 40px; 
 	display: none; 
 	width: 52px;
 	height: 52px;
@@ -1036,8 +1037,7 @@ a:hover {
 
 	.novidades {
     	margin: auto;
-    	font-size: 2rem;
-    	padding: 3rem;
+    	font-size: larger;
 	}
 
 	.texto-novidades {
@@ -1061,7 +1061,6 @@ a:hover {
 	}
 
 	.navbar.top-nav-collapse {
-		padding-top: 0.5rem;
 		padding-bottom: 0.5rem;
 		background-color: rgb(9 9 9);
 		box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.025);
@@ -1137,7 +1136,7 @@ a:hover {
 	/* Details */
 	.split {
 		height: auto;
-    	margin: 20rem;
+    	margin-bottom: 15rem;
 	}
 	
 	.split .area-1 {
@@ -1215,7 +1214,7 @@ a:hover {
 	.footer .footer-col.third {
 		display: inline-block;
 		width: 224px;
-		text-align: right;
+		text-align: center;
 		vertical-align: top;
 	}
 
@@ -1271,7 +1270,7 @@ a:hover {
 	/* Details */
 	.split {
 		height: auto;
-    	margin: 20rem;
+    	margin-bottom: 20rem;
 	}
 
 	.split .text-container {
@@ -1669,10 +1668,6 @@ opacity: 0;
     transition: transform .2s; /* Animation */
 }
 
-.gallery-cell:hover {
-  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-
 .card-title {
   color:#fff;
   margin-bottom: 0px !important;
@@ -1684,7 +1679,31 @@ opacity: 0;
   font-size: 14px;
 }
 
-.trophy {
+.calendar-margin {
+	margin-right: 8rem;
+	margin-bottom: 2rem;
+}
+
+.novidades {
+	width: 50%;
+}
+
+.bg-novidades {
+	z-index: -10;
+    margin-top: -210px;
+}
+
+.subtexto-novidades {
+	color: #000;
+	text-align: left;
+}
+
+.novidades-divider {
+    margin-bottom: 10rem;
+}
+
+@media screen and (min-width: 1080px) {
+    .trophy {
 	 transform: perspective(800px) rotateY(25deg) scale(0.9) rotateX(10deg);
 	 filter: blur(2px);
 	 opacity: 0.5;
@@ -1705,25 +1724,7 @@ opacity: 0;
 	 transform: perspective(3000px) rotateY(5deg);
 }
 
-.calendar-margin {
-	margin-right: 8rem;
-	margin-bottom: 2rem;
+.gallery-cell:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
-
-.novidades {
-	width: 100%;
-}
-
-.bg-novidades {
-	z-index: -10;
-    margin-top: -210px;
-}
-
-.subtexto-novidades {
-	color: #000;
-	text-align: left;
-}
-
-.novidades-divider {
-    margin-bottom: 10rem;
 }
